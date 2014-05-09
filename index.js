@@ -23,11 +23,15 @@ function tmuxToAnsi(value) {
 module.exports = function(str, opts) {
   var tag = /#\[([^\]]+)\]/g,
       open = [],
-      result,
-      isTTY = (opts && opts.tty);
+      result;
+  if (!opts) {
+    opts = {};
+  }
 
-  if (!isTTY) {
+  if (typeof opts.tty === 'undefined') {
     isTTY = (process && process.stdout && process.stdout.isTTY === true);
+  } else {
+    isTTY = opts.tty;
   }
 
   if (opts && opts.color === false) {
