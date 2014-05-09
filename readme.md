@@ -21,7 +21,7 @@ cyan, white, default, bright, bold, dim, underscore, blink, reverse, hidden,ital
 
 ## Specifying colors in tmux
 
-tmux uses a custom format for specifying colors, which is different from the set of codes used in the terminal. For compatibility, tmux-colors also uses the same format: #[attributes]
+tmux uses a custom format for specifying colors, which is different from the set of codes used in the terminal. For compatibility, tmux-colors also uses the same format: `#[attributes]`
 
 where attributes are a comma-separated list of 'fg=color' and 'bg=color', for example:
 
