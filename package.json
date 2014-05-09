@@ -1,0 +1,32 @@
+{
+  "name": "tmux-colors",
+  "version": "0.0.0",
+  "description": "Write tmux-compatible color strings and have them work both in the terminal and in tmux.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ansi-styles": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mixu/tmux-colors.git"
+  },
+  "keywords": [
+    "tmux",
+    "colors",
+    "ascii",
+    "ansi"
+  ],
+  "author": "Mikito Takada <mikito.takada@gmail.com> (http://mixu.net/)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/mixu/tmux-colors/issues"
+  },
+  "homepage": "https://github.com/mixu/tmux-colors"
+}
