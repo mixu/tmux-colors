@@ -1,6 +1,6 @@
 {
   "name": "tmux-colors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Write tmux-compatible color strings and have them work both in the terminal and in tmux.",
   "main": "index.js",
   "directories": {
