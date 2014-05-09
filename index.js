@@ -30,6 +30,10 @@ module.exports = function(str, opts) {
     isTTY = (process && process.stdout && process.stdout.isTTY === true);
   }
 
+  if (opts && opts.color === false) {
+    return str.replace(tag, '');
+  }
+
   if (!isTTY) {
     return str;
   }

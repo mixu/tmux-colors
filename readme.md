@@ -12,12 +12,19 @@ tmux-colors accepts strings written in a tmux-compatible format and converts the
 
     console.log(colors('#[fg=yellow,bold]Yellow bold#[default] Gray'));
 
-By default, if `process.stdout.isTTY` is true, then colors will be converted into ANSI color codes. Otherwise, they are directly echoed. You can pass `{ tty: true }` as the second parameter to force ANSI color codes.
-
-`colors.styles` exposes the styles as ANSI escape codes, which may be useful in some cases.
+By default, if `process.stdout.isTTY` is true, then colors will be converted into ANSI color codes. Otherwise, they are directly echoed.
 
 All the following are supported: black, red, green, yellow, blue, magenta,
 cyan, white, default, bright, bold, dim, underscore, blink, reverse, hidden,italics, color0 ... color255, colour0 ... colour255 and RGB strings (`#ff0000`).
+
+### Options
+
+    colors(str, opts)
+
+- You can pass `{ tty: true }` as the second parameter to force ANSI color codes.
+- You can pass `{ color: false} ` to strip out the color strings completely.
+
+`colors.styles` exposes the styles as ANSI escape codes, which may be useful in some cases.
 
 ## Specifying colors in tmux
 
